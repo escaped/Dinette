@@ -6,6 +6,7 @@ from django import forms
 from django.template.defaultfilters import slugify
 from django.db.models.signals import post_save
 from django.template.defaultfilters import truncatewords
+from django.utils.translation import ugettext as _
 
 import logging
 import logging.config
@@ -38,8 +39,8 @@ class SuperCategory(models.Model):
     accessgroups  = models.ManyToManyField(Group,related_name='can_access_forums')
     
     class Meta:
-        verbose_name = "Super Category"
-        verbose_name_plural = "Super Categories"
+        verbose_name = _("Super Category")
+        verbose_name_plural = _("Super Categories")
         ordering = ('-ordering', 'created_on')
         
     def __unicode__(self):
@@ -58,8 +59,8 @@ class Category(models.Model):
     moderated_by = models.ManyToManyField(User, related_name='moderaters')
     
     class Meta:
-        verbose_name = "Category"
-        verbose_name_plural = "Categories"
+        verbose_name = _("Category")
+        verbose_name_plural = _("Categories")
         ordering = ('ordering','-created_on' )    
     
     
@@ -78,7 +79,7 @@ class Category(models.Model):
         return ('dinette_index',(),{'categoryslug':self.slug})
     
     def getCategoryString(self):
-        return "category/%s" % self.slug
+        return _("category/%(slug)s") % {'slug': self.slug}
     
     
     def noofPosts(self):
@@ -86,7 +87,7 @@ class Category(models.Model):
         for topic in self.get_topics():
             #total posts for this topic = total replies + 1 (1 is for the topic as we are considering it as topic)
             count += topic.reply_set.count() + 1
-        mlog.debug("TOtal count =%d " % count)
+        mlog.debug("Total count =%d " % count)
         return count
     
     
@@ -170,8 +171,8 @@ class Ftopics(models.Model):
     class Meta:
         ordering = ('-is_sticky', '-last_reply_on',)
         get_latest_by = ('created_on')
-        verbose_name = "Topic"
-        verbose_name_plural = "Topics"
+        verbose_name = _("Topic")
+        verbose_name_plural = _("Topics")
         
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -204,7 +205,7 @@ class Ftopics(models.Model):
         
     def getTopicString(self):
         #which is helpful for doing reverse lookup of an feed url for a topic         
-        return "topic/%s" % self.slug
+        return _("topic/%(slug)s") % {'slug': self.slug}
         
     def lastPostDatetime(self):
         return self.lastPost().created_on
@@ -251,8 +252,8 @@ class Reply(models.Model):
     objects = ReplyManager()
 
     class Meta:
-        verbose_name = "Reply"
-        verbose_name_plural = "Replies"
+        verbose_name = _("Reply")
+        verbose_name_plural = _("Replies")
         ordering = ('created_on',)
         get_latest_by = ('created_on', )
         
@@ -369,8 +370,8 @@ class NavLink(models.Model):
     url = models.URLField()
     
     class Meta:
-        verbose_name = "Navigation Link"
-        verbose_name_plural = "Navigation Links"
+        verbose_name = _("Navigation Link")
+        verbose_name_plural = _("Navigation Links")
         
     def __unicode__(self):
         return self.title
@@ -389,9 +390,9 @@ def update_topic_on_reply(sender, instance, created, **kwargs):
 def notify_subscribers_on_reply(sender, instance, created, **kwargs):
     if created:
         site = Site.objects.get_current()
-        subject = "%s replied on %s" %(instance.posted_by, instance.topic.subject)
+        subject = ("%(postedby)s replied on %(subject)s") % {'postedby': instance.posted_by, 'subject': instance.topic.subject}
         body = instance.message.rendered
-        from_email = getattr(settings, 'DINETTE_FROM_EMAIL', '%s notifications <admin@%s>' %(site.name, site.domain))
+        from_email = getattr(settings, 'DINETTE_FROM_EMAIL', _('%(site_name)s notifications <admin@%(domain)s>') % {'sitename': site.name, 'domain': site.domain})
         # exclude the user who posted this, even if he is subscribed
         for subscriber in instance.topic.subscribers.exclude(username=instance.posted_by.username):
             subscriber.email_user(subject, body, from_email)
