@@ -1,4 +1,4 @@
-
+{% load i18n %}
 {% load thumbnail %} 
 
 <!-- div.post/even/replypost begins-->
@@ -9,11 +9,11 @@
     <h3 class="hn post-ident">
 	  <span class="post-num">{{ forloop.counter|add:1 }}</span>
 	  <span class="post-byline">
-	    <span>Reply by </span>
+	    <span>{% trans "Reply by" %}</span>
 		<a title="" href="#"></a>
 	  </span>
       <span class="post-link">
-	    <a class="permalink" rel="bookmark" title="Permanent link to this post" href="{{ reply.get_url_with_fragment }}">{{ reply.created_on|date:"jS F Y H:i A" }}</a>
+	    <a class="permalink" rel="bookmark" title="{% trans "Permanent link to this post" %}" href="{{ reply.get_url_with_fragment }}">{{ reply.created_on|date:"jS F Y H:i A" }}</a>
 	  </span> &nbsp; &nbsp; &nbsp;
 	</h3>
   </div>
@@ -28,11 +28,11 @@
 	    <li>
 		  <table class="authortable">
 		  <tr><td>
-		    {% if reply.posted_by.get_profile.photo  %}
-		      <img src="{% thumbnail reply.posted_by.get_profile.photo 80x80 %}" />
-		    {% else %}                                                        
-		      <img src="http://www.gravatar.com/avatar/{{reply.posted_by.get_profile.getMD5}}.jpg" alt="{{reply.posted_by.username}}'s Photo" />
-		    {% endif %} 
+		  	{% thumbnail reply.posted_by.get_profile.photo "80x80" as im %}
+		      <img src="{{im.url}}" />
+		    {% empty %}                                                        
+		      <img src="http://www.gravatar.com/avatar/{{reply.posted_by.get_profile.getMD5}}.jpg" alt="{{reply.posted_by.username}}'s {% trans "Photo" %}" />
+		    {% endthumbnail %}
 		  </td></tr>
 		  <tr><td>
 		    <a href="{{ reply.posted_by.get_profile.get_absolute_url }}">{{reply.posted_by.username}}</a>
@@ -43,9 +43,9 @@
 		<li class="userstatus">
 		  <span>
 		  {% if reply.posted_by.get_profile.is_online %}
-			Online
+			{% trans "Online" %}
 		  {% else %}
-			Offline
+			{% trans "Offline" %}
 		  {% endif %}
 		  </span>
 		</li>
@@ -55,12 +55,12 @@
 	  <!-- ul.author-info begins-->
 	  <ul class="author-info">
 	    <li>
-		  <span>Registered: 
+		  <span>{% trans "Registered" %}: 
 		    <strong> {{ reply.posted_by.date_joined|date:"jS F Y H:i A" }}</strong>
 		  </span>
 		</li>
 		<li>
-		  <span>Posts: 
+		  <span>{% trans "Posts" %}: 
 		    <strong> {{ reply.posted_by.get_profile.get_total_posts  }}</strong>
 		  </span>
 		</li>
@@ -70,7 +70,7 @@
 	<!-- div.post-author ends-->
 
 	<div class="post-entry">
-        <h4 id="entry{{ reply.id }}" class="entry-title hn">Re: {{reply.topic.subject}}</h4>
+        <h4 id="entry{{ reply.id }}" class="entry-title hn">{% trans "Re" %}: {{reply.topic.subject}}</h4>
 		<div id=content{{ reply.id }} class="entry-content">
 		  <p>{{ reply.message }}</p>
 		  {% with reply as rtopic %}    
@@ -88,14 +88,14 @@
                 <p class="post-actions">
                     {% if reply.posted_by == request.user or request.user in reply.topic.category.moderated_by.all %}
 						<span class="delete-post">
-						    <a href="#" onclick="delete_reply({{ reply.id }}); return false;">Delete</a>
+						    <a href="#" onclick="delete_reply({{ reply.id }}); return false;">{% trans "Delete" }</a>
 						</span>
 						<span class="edit-post">
-						    <a href="{% url dinette_editreply reply.id %}">Edit</a>
+						    <a href="{% url dinette_editreply reply.id %}">{% trans "Edit" %}</a>
 						</span>
                     {% endif %}
 					<span class="edit-post first-item">
-					    <a href="#" onclick="quote_reply({{ reply.id }}, '{{ reply.posted_by.username }}'); return false;">Quick quote</a>
+					    <a href="#" onclick="quote_reply({{ reply.id }}, '{{ reply.posted_by.username }}'); return false;">{% trans "Quick quote" %}</a>
 					</span>
 				</p>
 		    </div>

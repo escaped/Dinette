@@ -1,3 +1,4 @@
+{% load i18n %}
 <div id="topic{{ topic.pk }}" class="main-item odd main-first-item normal">
   {% if topic.is_closed %}
 	<span class="icon closed"><!-- --></span>
@@ -14,18 +15,18 @@
   <div class="item-subject">
 	<h3 class="hn"><span class="item-num">1</span>
 	  {% if topic.is_closed %}
-		<strong>(Closed)</strong>
+		<strong>({% trans "Closed" %})</strong>
 	  {% endif %}
 	  
 	  {% if topic.is_sticky %}
-		<strong>(Sticky)</strong>
+		<strong>({% trans "Sticky" %})</strong>
 	  {% endif %}		
 	  <a href="{% url dinette_topic_detail topic.category.slug topic.slug %}">{{topic.subject}} </a>   
 	</h3>
 	&nbsp;
 	<span class="item-starter">
 		  <cite>
-		      by <a href={{ topic.posted_by.get_profile.get_absolute_url }}>
+		      {% trans "by" %} <a href={{ topic.posted_by.get_profile.get_absolute_url }}>
 		             {{ topic.posted_by.username }}
 		         </a>
 		  </cite>

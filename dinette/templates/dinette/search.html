@@ -1,5 +1,5 @@
 {% extends "dinette/base.html" %}
-	
+{% load i18n %}	
 
 
 {% block content %}
@@ -27,13 +27,13 @@
 					<strong><a href="{{ result.object.get_absolute_url }}">{{ result.object }}</a></strong>
 					{% if result.object.search_snippet %}
 					<p>
-						{{ result.object.search_snippet|safe }}
+						{{ result.object.search_snippet }}
 					</p>
 					{% endif %}
 				
 				</li>
 			{% empty %}
-				<li><p>We do not have any results for this query.</p></li> 
+				<li><p>{% trans "We do not have any results for this query." %}</p></li> 
 			{% endfor %}
 		</ul>
 	</div>

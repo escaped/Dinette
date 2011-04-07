@@ -1,5 +1,5 @@
 {% extends "dinette/base.html" %}
-
+{% load i18n %}
 {% block content %}
 
 
@@ -24,10 +24,12 @@
   				<div class="main-subhead">
 					<p class="item-summary forum-views">
 					  <span>
+					  	{% blocktrans %}
 						<strong class="subject-title">Topics</strong> in this forum with details of 
 						<strong class="info-replies">replies</strong>, 
 						<strong class="info-views">views</strong>, 
 						<strong class="info-lastpost">last post</strong>.
+						{% endblocktrans %}
 					  </span>
 					</p>
 				  </div>
@@ -35,7 +37,7 @@
 					{% for topic in new_topic_list %}
 						{% include "dinette/topic_detail_frag.html" %}
 					{% empty %}
-						<p>There is no topic with new replies since your last visit.</p>
+						<p>{% trans "There is no topic with new replies since your last visit." %}</p>
 					{% endfor %}
 				</div>
 			</div>

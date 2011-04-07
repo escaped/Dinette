@@ -1,6 +1,6 @@
 {% extends 'dinette/base.html' %}
-
-{% block title %} Dinette User Profile for {{ user_profile }}{% endblock %}
+{% load i18n %}
+{% block title %} {% trans "Dinette User Profile for" %} {{ user_profile }}{% endblock %}
 
 {% block content %}
 
@@ -21,17 +21,17 @@
 	  <div id="brd-crumbs-top" class="crumbs gen-content">
 	    <p>
 		  <span class="crumb crumbfirst">
-			<a href="{% url dinette_category %}">Dinette Forums</a>
+			<a href="{% url dinette_category %}">{% trans "Dinette Forums" %}</a>
 		  </span> 
 		  <span class="crumb crumblast">
-			<span> &raquo; User Profile </span>
+			<span> &raquo; {% trans "User Profile" %} </span>
 		  </span>
         </p>
 	  </div>
 	  <!-- bread crumbs end -->
 	
 	  <div class="main-head">
-		<h2 class="hn"><span><span class="item-info">User Profile </span></span></h2>
+		<h2 class="hn"><span><span class="item-info">{% trans "User Profile" %} </span></span></h2>
 	  </div>
 
 	  <div class="main-subhead" style='padding: 10px;'>
@@ -53,32 +53,32 @@
 	  
 	  {% if user_profile.moderaters.all %}
 		<p>
-	    <b> Moderator of </b>:
+	    <b> {% trans "Moderator of" %} </b>:
 		{% for category in user_profile.moderaters.all %}
 		  <a href='{{ category.get_absolute_url }}'> {{ category.name }} </a> {% if not forloop.last %}, {% else %}. {% endif %}
 		{% endfor %}
 		</p>
 	  {% endif %}
-	  <p><b> Number of topics posted </b>: {{  user_profile.ftopics_set.count }} </p>
-	  <p><b> Number of replies posted </b>: {{  user_profile.reply_set.count }} </p>
+	  <p><b> {% trans "Number of topics posted" %} </b>: {{  user_profile.ftopics_set.count }} </p>
+	  <p><b> {% trans "Number of replies posted" %} </b>: {{  user_profile.reply_set.count }} </p>
 
       {% if request.user == user_profile %}
-      <p><b>Settings: </b></p>
+      <p><b>{% trans "Settings" %}: </b></p>
       <br/>
-      <p>Subscriptions</p>
+      <p>{% trans "Subscriptions" %}</p>
         <ul>
             <li>
-            Daily Digest
+            {% trans "Daily Digest" %}
 		        {% if user_profile.get_profile.is_subscribed_to_digest %}
-		            <a href="{% url dinette_unsubscribe_from_digest %}"><em>Unsubscribe</em></a>
+		            <a href="{% url dinette_unsubscribe_from_digest %}"><em>{% trans "Unsubscribe" %}</em></a>
 		        {% else %}
-		            <a href="{% url dinette_subscribe_to_digest %}">Subscribe</a>
+		            <a href="{% url dinette_subscribe_to_digest %}">{% trans "Subscribe" %}</a>
 		        {% endif %}
 	        </li>
 	        {% for topic in user_profile.subscribers.all %}
 	            <li>
 	                {{ topic.subject }}
-	                <a href="{% url dinette_unsubscribe_from_topic topic.id %}?next={{ request.path }}"><em>Unsubscribe</em></a>
+	                <a href="{% url dinette_unsubscribe_from_topic topic.id %}?next={{ request.path }}"><em>{% trans "Unsubscribe" %}</em></a>
 	            </li>
 	        {% endfor %}
         </ul>
