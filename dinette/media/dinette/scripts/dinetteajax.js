@@ -39,7 +39,7 @@ function check_errors_in_form() {
             
     //hide the form
     
-    $("#errorbox span").html(" <img src='/site_media/dinette/images/ajaximage.gif' alt='ajax image'/> &nbsp; posting...........  ")
+    $("#errorbox span").html(" <img src='"+media_url+"dinette/images/ajaximage.gif' alt='ajax image'/> &nbsp; posting...........  ")
     
      return true;
 }
@@ -52,7 +52,7 @@ function check_errors_in_Replyform() {
         return false;
     }
    
-    $("#errorbox span").html(" <img src='/site_media/dinette/images/ajaximage.gif' alt='ajax image'/> &nbsp; posting the reply...........  ");
+    $("#errorbox span").html(" <img src='"+media_url+"dinette/images/ajaximage.gif' alt='ajax image'/> &nbsp; posting the reply...........  ");
      
     return true;    
 }
