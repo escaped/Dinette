@@ -10,6 +10,7 @@ from django.contrib.syndication.feeds import Feed
 from django.contrib.auth.models import User , Group
 from django.conf import settings
 from django.views.generic.list_detail import object_list
+from django.utils.translation import ugettext as _
 
 from  datetime  import datetime, timedelta
 import logging
@@ -143,7 +144,7 @@ def postTopic(request) :
     #code which checks for flood control
     if (datetime.now() -(request.user.get_profile().last_posttime)).seconds <= settings.FLOOD_TIME :
     #oh....... user trying to flood us Stop him
-        d2 = {"is_valid":"flood","errormessage":"Flood control.................."}
+        d2 = {"is_valid":"flood","errormessage":_("Flood control..................")}
         if request.FILES : 
             json = "<textarea>"+simplejson.dumps(d2)+"</textarea>"
         else :
@@ -200,7 +201,7 @@ def postReply(request) :
     #code which checks for flood control
     if (datetime.now() -(request.user.get_profile().last_posttime)).seconds <= settings.FLOOD_TIME:
     #oh....... user trying to flood us Stop him
-        d2 = {"is_valid":"flood","errormessage":"You have posted message too recently. Please wait a while before trying again."}
+        d2 = {"is_valid":"flood","errormessage": _("You have posted message too recently. Please wait a while before trying again.")}
         if request.FILES : 
             json = "<textarea>"+simplejson.dumps(d2)+"</textarea>"
         else :
@@ -242,7 +243,7 @@ def postReply(request) :
 
 @login_required    
 def deleteReply(request, reply_id):
-    resp= {"status": "1", "message": "Successfully deleted the reply"}
+    resp= {"status": "1", "message": _("Successfully deleted the reply")}
     try:
         reply = Reply.objects.get(pk=reply_id)
         if not (reply.posted_by == request.user or request.user in reply.topic.category.moderated_by.all()):
@@ -250,7 +251,7 @@ def deleteReply(request, reply_id):
         reply.delete()        
     except:
         resp["status"] = 0
-        resp["message"] = "Error deleting message"
+        resp["message"] = _("Error deleting message")
     json = simplejson.dumps(resp)
     return HttpResponse(json, mimetype = json_mimetype)
 
@@ -281,7 +282,7 @@ class LatestTopicsByCategory(Feed):
         return get_object_or_404(Category, slug=whichcategory[0])
     
     def title(self, obj):
-        return "Latest topics in category %s" % obj.name
+        return _("Latest topics in category %(name)s") % {'name': obj.name}
     
     def link(self, obj):
         return  settings.SITE_URL
@@ -307,7 +308,7 @@ class LatestRepliesOfTopic(Feed):
         return get_object_or_404(Ftopics, slug=whichtopic[0])
          
     def title(self, obj):
-        return "Latest replies in topic %s" % obj.subject
+        return _("Latest replies in topic %(subject)s") % {'subject': obj.subject}
      
     def link(self, obj):
         return  settings.SITE_URL
@@ -354,34 +355,34 @@ def moderate_topic(request, topic_id, action):
     if request.method == 'POST':
         if action == 'close':
             if topic.is_closed:
-                message = 'You have reopened topic %s'%topic.subject
+                message = _('You have reopened topic %(subjects') % {'subject': topic.subject}
             else:
-                message = 'You have closed topic %s'%topic.subject
+                message = _('You have closed topic %(subject)s') % {'subject': topic.subject}
             topic.is_closed = not topic.is_closed
         elif action == 'announce':
             if topic.announcement_flag:
-                message = '%s is no longer an announcement.' % topic.subject
+                message = _('%(subject)s is no longer an announcement.') % {'subject': topic.subject}
             else:
-                message = '%s is now an announcement.' % topic.subject
+                message = _('%(subject)s is now an announcement.') % {'subject': topic.subject}
             topic.announcement_flag = not topic.announcement_flag
         elif action == 'sticky':
             if topic.is_sticky:
-                message = '%s has been unstickied.' % topic.subject
+                message = _('%(subject)s has been unstickied.') % {'subject': topic.subject}
             else:
-                message = '%s has been stickied.' % topic.subject
+                message = _('%(subject)s has been stickied.') % {'subject': topic.subject}
             topic.is_sticky = not topic.is_sticky
         elif action == 'hide':
             if topic.is_hidden:
-                message = '%s has been unhidden.' % topic.subject
+                message =_('%(subject)s has been unhidden.') % {'subject': topic.subject}
             else:
-                message = "%s has been hidden and won't show up any further." % topic.subject
+                message = _("%(subject)s has been hidden and won't show up any further.") % {'subject': topic.subject}
             topic.is_hidden = not topic.is_hidden
         topic.save()
         payload = {'topic_id':topic.pk, 'message':message}
         resp = simplejson.dumps(payload)
         return HttpResponse(resp, mimetype = json_mimetype)
     else:
-        return HttpResponse('This view must be called via post')
+        return HttpResponse(_('This view must be called via post'))
     
 def login(request):
     if getattr(settings, 'DINETTE_LOGIN_TEMPLATE', None):
@@ -398,18 +399,18 @@ def user_profile(request, slug):
 def new_topics(request):
     userprofile = request.user.get_profile()
     new_topic_list = userprofile.get_since_last_visit()
-    return topic_list(request, new_topic_list, page_message = "Topics since your last visit")
+    return topic_list(request, new_topic_list, page_message = _("Topics since your last visit"))
     
 def active(request):
     #Time filter = 48 hours
     days_ago_2 = datetime.now() - timedelta(days = 2)
     topics = Ftopics.objects.filter(last_reply_on__gt =  days_ago_2)
     active_topics = topics.extra(select= {"activity":"viewcount+100*num_replies"}).order_by("-activity")
-    return topic_list(request, active_topics, page_message = "Most active Topics")
+    return topic_list(request, active_topics, page_message = _("Most active Topics"))
 
 def unanswered(request):
     unanswered_topics = Topic.objects.filter(num_replies = 0)
-    return topic_list(request, unanswered_topics, page_message = "Unanswered Topics")
+    return topic_list(request, unanswered_topics, page_message = _("Unanswered Topics"))
     
 def topic_list(request, queryset, page_message):
     payload = {"new_topic_list": queryset, "page_message": page_message}
