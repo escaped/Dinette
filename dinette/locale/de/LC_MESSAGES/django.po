@@ -1,0 +1,507 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-04-07 13:58+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: models.py:42
+msgid "Super Category"
+msgstr "Oberkategorie"
+
+#: models.py:43
+msgid "Super Categories"
+msgstr "Oberkategorien"
+
+#: models.py:62
+msgid "Category"
+msgstr "Kategorie"
+
+#: models.py:63
+msgid "Categories"
+msgstr "Kategorien"
+
+#: models.py:82
+#, python-format
+msgid "category/%(slug)s"
+msgstr "Kategorie/%(slug)s"
+
+#: models.py:174
+msgid "Topic"
+msgstr "Thema"
+
+#: models.py:175 templates/dinette/category_details.html:78
+msgid "Topics"
+msgstr "Themen"
+
+#: models.py:208
+#, python-format
+msgid "topic/%(slug)s"
+msgstr "Thema/%(slug)s"
+
+#: models.py:255
+msgid "Reply"
+msgstr "Antwort"
+
+#: models.py:256
+msgid "Replies"
+msgstr "Antworten"
+
+#: models.py:373
+msgid "Navigation Link"
+msgstr "Navigationslink"
+
+#: models.py:374
+msgid "Navigation Links"
+msgstr "Navigationslinks"
+
+#: models.py:395
+#, python-format
+msgid "%(site_name)s notifications <admin@%(domain)s>"
+msgstr "%(site_name)s Mitteilung <admin@%(domain)s>"
+
+#: views.py:147
+msgid "Flood control.................."
+msgstr "Spam-Unterbindung"
+
+#: views.py:204
+msgid ""
+"You have posted message too recently. Please wait a while before trying "
+"again."
+msgstr "Sie haben zu schnellzu viele Nachrichten erstellt. Warten sie bitte etwas, ehe Sie es erneut versuchen."
+
+#: views.py:246
+msgid "Successfully deleted the reply"
+msgstr "Eintrag erfolgreich gel&ouml;scht"
+
+#: views.py:254
+msgid "Error deleting message"
+msgstr "Eintrag konnte nicht gel&ouml;scht werden"
+
+#: views.py:285
+#, python-format
+msgid "Latest topics in category %(name)s"
+msgstr "Neuste Themen aus %(name)s"
+
+#: views.py:311
+#, python-format
+msgid "Latest replies in topic %(subject)s"
+msgstr "Neuste Antworten in %(subject)s"
+
+#: views.py:358
+msgid "You have reopened topic %(subject)s"
+msgstr "Sie haben das Thema '%(subject)s' wieder ge&ouml;ffnet"
+
+#: views.py:360
+#, python-format
+msgid "You have closed topic %(subject)s"
+msgstr "Sie haben das Thema '%(subject)s' geschlossen"
+
+#: views.py:364
+#, python-format
+msgid "%(subject)s is no longer an announcement."
+msgstr "%(subject)s ist keine Ank&uuml;ndigung mehr"
+
+#: views.py:366
+#, python-format
+msgid "%(subject)s is now an announcement."
+msgstr "%(subject)s ist nun einen Ank&uuml;ndigung"
+
+#: views.py:370
+#, python-format
+msgid "%(subject)s has been unstickied."
+msgstr "%(subject)s ist nicht mehr hervorgehoben"
+
+#: views.py:372
+#, python-format
+msgid "%(subject)s has been stickied."
+msgstr "%(subject)s ist nun hervorgehoben"
+
+#: views.py:376
+#, python-format
+msgid "%(subject)s has been unhidden."
+msgstr "%(subject)s ist sichtbar"
+
+#: views.py:378
+#, python-format
+msgid "%(subject)s has been hidden and won't show up any further."
+msgstr "%(subject)s ist nun versteckt"
+
+#: views.py:385
+msgid "This view must be called via post"
+msgstr "Fehler: kein POST?"
+
+#: views.py:402
+msgid "Topics since your last visit"
+msgstr "Themen seit ihrem letzten Besuch"
+
+#: views.py:409
+msgid "Most active Topics"
+msgstr "Aktivsten Themen"
+
+#: views.py:413 templates/dinette/header_frag.html:46
+msgid "Unanswered Topics"
+msgstr "Unbeantwortete Themen"
+
+#: templates/dinette/announce_frag.html:8
+msgid "[New Announcement]"
+msgstr "[Neue Ank&uuml;ndigung]"
+
+#: templates/dinette/attachement_frag.html:7
+msgid "File Attachment"
+msgstr "Dateianhang"
+
+#: templates/dinette/attachement_frag.html:8
+msgid "Download"
+msgstr "Herunterladen"
+
+#: templates/dinette/attachement_frag.html:15
+msgid "Image Attachment"
+msgstr "Bildanhang"
+
+#: templates/dinette/category_details.html:35
+msgid "Post Topic"
+msgstr "Erstelle Thema"
+
+#: templates/dinette/category_details.html:36
+#: templates/dinette/topic_detail.html:193
+msgid "close"
+msgstr "schlie&szlig;en"
+
+#: templates/dinette/category_details.html:51
+msgid "Permanent link to this forum."
+msgstr "Permanenter Link zu dieser Seite"
+
+#: templates/dinette/category_details.html:68
+msgid "New Topic"
+msgstr "Neues Thema"
+
+#: templates/dinette/category_details.html:70
+msgid "Login to start New Topic"
+msgstr "Bitte anmelden, um ein neues Thema zu erstellen"
+
+#: templates/dinette/category_details.html:77
+msgid "RSS"
+msgstr "RSS"
+
+#: templates/dinette/category_details.html:84
+msgid ""
+"\n"
+"\t\t\t<strong class=\"subject-title\">Topics</strong> in this forum with "
+"details of \n"
+"\t\t\t<strong class=\"info-replies\">replies</strong>, \n"
+"\t\t\t<strong class=\"info-views\">views</strong>, \n"
+"\t\t\t<strong class=\"info-lastpost\">last post</strong>.\n"
+"\t\t\t"
+msgstr ""
+"\n"
+"\t\t\t<strong class=\"subject-title\">Themen</strong> in diesem Forum mit "
+"details of \n"
+"\t\t\t<strong class=\"info-replies\">Antworten</strong>, \n"
+"\t\t\t<strong class=\"info-views\">views</strong>, \n"
+"\t\t\t<strong class=\"info-lastpost\">neusten Beitr&auml;ge</strong>.\n"
+"\t\t\t"
+
+#: templates/dinette/edit_reply.html:31
+msgid "Done editing"
+msgstr "Editieren beenden"
+
+#: templates/dinette/header_frag.html:5
+msgid "Skip to forum content"
+msgstr "Zum Inhalt springen"
+
+#: templates/dinette/header_frag.html:13
+msgid "Home"
+msgstr "Startseite"
+
+#: templates/dinette/header_frag.html:16
+msgid "Search"
+msgstr "Suche"
+
+#: templates/dinette/header_frag.html:20
+msgid "New topics"
+msgstr "Neue Themen"
+
+#: templates/dinette/header_frag.html:36
+msgid "Hello"
+msgstr "Hallo"
+
+#: templates/dinette/header_frag.html:40
+msgid "Login"
+msgstr "Anmelden"
+
+#: templates/dinette/header_frag.html:45
+msgid "Active Topics"
+msgstr "Aktive Themen"
+
+#: templates/dinette/login.html:3
+msgid "Submit"
+msgstr "senden"
+
+#: templates/dinette/mainindex.html:28
+msgid ""
+"\n"
+"\t    <strong class=\"subject-title\">Forum  </strong> in this category with "
+"details of \n"
+"\t\t<strong class=\"info-topics\">topics</strong>,\n"
+"\t\t<strong class=\"info-posts\">posts</strong>, \n"
+"\t\t<strong class=\"info-lastpost\">last post</strong>\n"
+"\t\t"
+msgstr ""
+"\n"
+"\t    <strong class=\"subject-title\">Themen</strong> in diesem Forum mit "
+"details of \n"
+"\t\t\t<strong class=\"info-replies\">Antworten</strong>, \n"
+"\t\t\t<strong class=\"info-views\">views</strong>, \n"
+"\t\t\t<strong class=\"info-lastpost\">neusten Beitr&auml;ge</strong>.\n"
+"\t\t"
+
+#: templates/dinette/mainindex.html:49
+msgid "Moderated by"
+msgstr "Moderiert von"
+
+#: templates/dinette/mainindex.html:60
+msgid "topics"
+msgstr "Themen"
+
+#: templates/dinette/mainindex.html:63
+msgid "posts"
+msgstr "Eintr&auml;ge"
+
+#: templates/dinette/mainindex.html:66
+msgid "Last post"
+msgstr "Letzter Eintrag"
+
+#: templates/dinette/mainindex.html:78
+#: templates/dinette/topic_detail_frag.html:29
+msgid "by"
+msgstr "von"
+
+#: templates/dinette/mainindex.html:98
+msgid "Forum statistics"
+msgstr "Forum-Statistiken"
+
+#: templates/dinette/mainindex.html:101
+msgid "Total number of registered users"
+msgstr "Anzahl registrierter Benutzer"
+
+#: templates/dinette/mainindex.html:104
+msgid "Newest registered user"
+msgstr "Neuster Benutzer"
+
+#: templates/dinette/mainindex.html:113
+msgid "Total number of topics"
+msgstr "Anzahl von Themen"
+
+#: templates/dinette/mainindex.html:116
+msgid "Total number of posts"
+msgstr "Anzahl von Eintr&auml;gen"
+
+#: templates/dinette/mainindex.html:119
+msgid "Users Online"
+msgstr "Benutzer Online"
+
+#: templates/dinette/moderation_frag.html:3
+msgid "Reopen"
+msgstr "wieder&ouml;ffnen"
+
+#: templates/dinette/moderation_frag.html:3
+msgid "Close"
+msgstr "schließen"
+
+#: templates/dinette/moderation_frag.html:4
+msgid "Un Stickify"
+msgstr "Unsticky"
+
+#: templates/dinette/moderation_frag.html:4
+msgid "Stickify"
+msgstr "Sticky"
+
+#: templates/dinette/moderation_frag.html:5
+msgid "Remove from announcement"
+msgstr "Von Ank&uuml;ndigungen entfernen"
+
+#: templates/dinette/moderation_frag.html:5
+msgid "Make announcement"
+msgstr "Ank&uuml;ndigung"
+
+#: templates/dinette/moderation_frag.html:6
+msgid "Hide"
+msgstr "Verstecken"
+
+#: templates/dinette/new_topics.html:27
+msgid ""
+"\n"
+"\t\t\t\t\t\t<strong class=\"subject-title\">Topics</strong> in this forum "
+"with details of \n"
+"\t\t\t\t\t\t<strong class=\"info-replies\">replies</strong>, \n"
+"\t\t\t\t\t\t<strong class=\"info-views\">views</strong>, \n"
+"\t\t\t\t\t\t<strong class=\"info-lastpost\">last post</strong>.\n"
+"\t\t\t\t\t\t"
+msgstr ""
+"\n"
+"\t\t\t<strong class=\"subject-title\">Themen</strong> in diesem Forum mit "
+"details of \n"
+"\t\t\t<strong class=\"info-replies\">Antworten</strong>, \n"
+"\t\t\t<strong class=\"info-views\">views</strong>, \n"
+"\t\t\t<strong class=\"info-lastpost\">neusten Beitr&auml;ge</strong>.\n"
+"\t\t\t"
+
+#: templates/dinette/new_topics.html:40
+msgid "There is no topic with new replies since your last visit."
+msgstr "Keine neuen Beitr&auml;ge siet ihremletztem Besuch"
+
+#: templates/dinette/replydetail_frag.html:12
+#: templates/dinette/topic_detail.html:102
+msgid "Reply by"
+msgstr "Antwort von"
+
+#: templates/dinette/replydetail_frag.html:16
+#: templates/dinette/topic_detail.html:106
+msgid "Permanent link to this post"
+msgstr "Permanenter Link zu diesem Beitrag"
+
+#: templates/dinette/replydetail_frag.html:34
+#: templates/dinette/topic_detail.html:122
+msgid "Photo"
+msgstr "Foto"
+
+#: templates/dinette/replydetail_frag.html:46
+#: templates/dinette/topic_detail.html:134
+msgid "Online"
+msgstr "Online"
+
+#: templates/dinette/replydetail_frag.html:48
+#: templates/dinette/topic_detail.html:136
+msgid "Offline"
+msgstr "Offline"
+
+#: templates/dinette/replydetail_frag.html:58
+#: templates/dinette/topic_detail.html:141
+msgid "Registered"
+msgstr "registriert"
+
+#: templates/dinette/replydetail_frag.html:63
+#: templates/dinette/topic_detail.html:86
+#: templates/dinette/topic_detail.html:142
+msgid "Posts"
+msgstr "Beitr&auml;ge"
+
+#: templates/dinette/replydetail_frag.html:73
+msgid "Re"
+msgstr "Aw"
+
+#: templates/dinette/replydetail_frag.html:94
+msgid "Edit"
+msgstr "Editieren"
+
+#: templates/dinette/replydetail_frag.html:98
+msgid "Quick quote"
+msgstr "Zitieren"
+
+#: templates/dinette/search.html:36
+msgid "We do not have any results for this query."
+msgstr "Keine Ergebnisse gefunden"
+
+#: templates/dinette/topic_detail.html:53
+#: templates/dinette/topic_detail.html:171
+msgid "Post Reply"
+msgstr "Antwort erstellen"
+
+#: templates/dinette/topic_detail.html:55
+#: templates/dinette/topic_detail.html:173
+msgid "Login to Post Reply"
+msgstr "Anmelden,um Antwort zu erstellen"
+
+#: templates/dinette/topic_detail.html:60
+msgid "Next"
+msgstr "weiter"
+
+#: templates/dinette/topic_detail.html:64
+msgid "Previous"
+msgstr "zur&uuml;ck"
+
+#: templates/dinette/topic_detail.html:74
+msgid "RSS Topic Feed"
+msgstr "RSS Themen"
+
+#: templates/dinette/topic_detail.html:79
+#: templates/dinette/user_profile.html:73
+#: templates/dinette/user_profile.html:81
+msgid "Unsubscribe"
+msgstr "Unsubscribe"
+
+#: templates/dinette/topic_detail.html:81
+#: templates/dinette/user_profile.html:75
+msgid "Subscribe"
+msgstr "Subscribe"
+
+#: templates/dinette/topic_detail_frag.html:18
+msgid "Closed"
+msgstr "geschlossen"
+
+#: templates/dinette/topic_detail_frag.html:22
+msgid "Sticky"
+msgstr "Sticky"
+
+#: templates/dinette/user_profile.html:3
+msgid "Dinette User Profile for"
+msgstr "Benutzerprofil f&uuml;r"
+
+#: templates/dinette/user_profile.html:24
+msgid "Dinette Forums"
+msgstr "Forum"
+
+#: templates/dinette/user_profile.html:27
+#: templates/dinette/user_profile.html:34
+msgid "User Profile"
+msgstr "Benutzerprofil"
+
+#: templates/dinette/user_profile.html:56
+msgid "Moderator of"
+msgstr "Moderator von"
+
+#: templates/dinette/user_profile.html:62
+msgid "Number of topics posted"
+msgstr "Anzahler stellter Themen"
+
+#: templates/dinette/user_profile.html:63
+msgid "Number of replies posted"
+msgstr "Anzahl erstellter Antworten"
+
+#: templates/dinette/user_profile.html:66
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: templates/dinette/user_profile.html:68
+msgid "Subscriptions"
+msgstr "Subscriptions"
+
+#: templates/dinette/user_profile.html:71
+msgid "Daily Digest"
+msgstr "&Uuml;bersicht"
+
+#: templates/dinette/email/daily_updates.html:2
+msgid "Recent topics"
+msgstr "Neuste Themen"
+
+#: templates/dinette/email/daily_updates.html:12
+msgid "Recent posts"
+msgstr "Neuste Beitr&auml;ge"
+
+#: templates/dinette/email/daily_updates.html:22
+msgid "Recent users"
+msgstr "Neuste Benutzer"

@@ -28,12 +28,12 @@ function check_errors_in_form() {
     farry =  $('#fposttopic *').fieldValue()
   
     if ($.trim(farry[0]).length  <= 0) {
-        window.alert("Subject field should not be empty"+farry[0]);
+        window.alert(gettext("Subject field should not be empty")+farry[0]);
         return false;
     }
      
     if ($.trim(farry[1]).length <= 0) {
-        window.alert("Message field should not be empty"+farry[1]);
+        window.alert(gettext("Message field should not be empty")+farry[1]);
         return false;
     }
             
@@ -48,11 +48,11 @@ function check_errors_in_form() {
 function check_errors_in_Replyform() {
     farry =  $('#fpostreply *').fieldValue();
     if ($.trim(farry[0]).length  <= 0) {
-        window.alert("Message should not be empty"+farry[0]);
+        window.alert(gettext("Message should not be empty")+farry[0]);
         return false;
     }
    
-    $("#errorbox span").html(" <img src='"+media_url+"dinette/images/ajaximage.gif' alt='ajax image'/> &nbsp; posting the reply...........  ");
+    $("#errorbox span").html(" <img src='"+media_url+"dinette/images/ajaximage.gif' alt='ajax image'/> &nbsp; "+gettext("posting the reply..........."));
      
     return true;    
 }
@@ -63,7 +63,7 @@ function formsubmission(data) {
         if(data["is_valid"] == "true") {
             $("#topicslist").prepend(data["response_html"]);
             show_hide_error_box();
-            $("#errorbox span").html("Sucessfully posted the topic");
+            $("#errorbox span").html(gettext("Sucessfully posted the topic"));
             $("#errorbox span").css({ padding : 6 })
             $("#formbox").css("display","none");
         }
@@ -71,7 +71,7 @@ function formsubmission(data) {
             $("tr:lt(3)","#formbox").remove();
             $("#formbox  table tbody").prepend(data["response_html"]);
             show_hide_error_box();
-            $("#errorbox span").html("There is an error in the form.Please repost the form");
+            $("#errorbox span").html(gettext("There is an error in the form.Please repost the form"));
             $("#errorbox span").css({ padding : 6 })
         }        
         else if(data["is_valid"] == "flood") {
@@ -86,7 +86,7 @@ function formsubmission(data) {
         if(data["is_valid"] == "true") {
             $("#replylist").append(data["response_html"]);
             show_hide_error_box();
-            $("#errorbox span").html("Sucessfully Replied to the topic");
+            $("#errorbox span").html(gettext("Sucessfully Replied to the topic"));
             $("#errorbox span").css({ padding : 6 })
             $("#formbox").css("display","none");
         }
@@ -94,7 +94,7 @@ function formsubmission(data) {
             $("tr:lt(2)","#formbox").remove();
             $("#formbox  table tbody").prepend(data["response_html"]);
             show_hide_error_box();
-            $("#errorbox span").html("There is an error in the form.Please repost the form");
+            $("#errorbox span").html(gettext("There is an error in the form.Please repost the form"));
             $("#errorbox span").css({ padding : 6 })
         }
         else if(data["is_valid"] == "flood") {

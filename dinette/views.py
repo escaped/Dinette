@@ -355,7 +355,7 @@ def moderate_topic(request, topic_id, action):
     if request.method == 'POST':
         if action == 'close':
             if topic.is_closed:
-                message = _('You have reopened topic %(subjects') % {'subject': topic.subject}
+                message = _('You have reopened topic %(subject)s') % {'subject': topic.subject}
             else:
                 message = _('You have closed topic %(subject)s') % {'subject': topic.subject}
             topic.is_closed = not topic.is_closed

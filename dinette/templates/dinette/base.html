@@ -35,6 +35,7 @@
 {% endblock %}
 
 {% compress js %}
+  <script type="text/javascript" src="{% url django.views.i18n.javascript_catalog %}"></script>
   <script type="text/javascript">
   	media_url = '{{MEDIA_URL}}';
   </script>

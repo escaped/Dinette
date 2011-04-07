@@ -8,9 +8,15 @@ feeds = {
    'topic': LatestRepliesOfTopic
 }
 
+js_info_dict = {
+    'domain': 'djangojs',
+    'packages': ('dinette',),
+}
+urlpatterns = patterns('',
+    (r'^jsi18n/$', 'django.views.i18n.javascript_catalog', js_info_dict),
+)
 
-
-urlpatterns = patterns('dinette.views',
+urlpatterns += patterns('dinette.views',
     url(r'^$','index_page',name='dinette_category'),
     url(r'^new/$','new_topics',name='dinette_new_for_user'),                         
     url(r'^active/$','active',name='dinette_active'),
