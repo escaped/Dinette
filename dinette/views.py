@@ -213,7 +213,7 @@ def postReply(request) :
         
     
     reply = freply.save(commit=False)    
-     #only if there is any file
+    #only if there is any file
     if len(request.FILES.keys()) == 1 :
         if(request.FILES['file'].content_type.find("image") >= 0 ) :
             reply.attachment_type = "image"
