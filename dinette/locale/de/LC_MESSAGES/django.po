@@ -81,7 +81,7 @@ msgstr "Spam-Unterbindung"
 msgid ""
 "You have posted message too recently. Please wait a while before trying "
 "again."
-msgstr "Sie haben zu schnellzu viele Nachrichten erstellt. Warten sie bitte etwas, ehe Sie es erneut versuchen."
+msgstr "Sie haben zu schnell zu viele Nachrichten erstellt. Warten Sie bitte etwas, ehe Sie es erneut versuchen."
 
 #: views.py:246
 msgid "Successfully deleted the reply"
@@ -146,7 +146,7 @@ msgstr "Fehler: kein POST?"
 
 #: views.py:402
 msgid "Topics since your last visit"
-msgstr "Themen seit ihrem letzten Besuch"
+msgstr "Themen seit Ihrem letzten Besuch"
 
 #: views.py:409
 msgid "Most active Topics"
@@ -263,7 +263,6 @@ msgid ""
 msgstr ""
 "\n"
 "\t    <strong class=\"subject-title\">Themen</strong> in diesem Forum mit "
-"details of \n"
 "\t\t\t<strong class=\"info-replies\">Antworten</strong>, \n"
 "\t\t\t<strong class=\"info-views\">views</strong>, \n"
 "\t\t\t<strong class=\"info-lastpost\">neusten Beitr&auml;ge</strong>.\n"
@@ -316,7 +315,7 @@ msgstr "Benutzer Online"
 
 #: templates/dinette/moderation_frag.html:3
 msgid "Reopen"
-msgstr "wieder&ouml;ffnen"
+msgstr "wieder &ouml;ffnen"
 
 #: templates/dinette/moderation_frag.html:3
 msgid "Close"
@@ -354,7 +353,6 @@ msgid ""
 msgstr ""
 "\n"
 "\t\t\t<strong class=\"subject-title\">Themen</strong> in diesem Forum mit "
-"details of \n"
 "\t\t\t<strong class=\"info-replies\">Antworten</strong>, \n"
 "\t\t\t<strong class=\"info-views\">views</strong>, \n"
 "\t\t\t<strong class=\"info-lastpost\">neusten Beitr&auml;ge</strong>.\n"
@@ -362,7 +360,7 @@ msgstr ""
 
 #: templates/dinette/new_topics.html:40
 msgid "There is no topic with new replies since your last visit."
-msgstr "Keine neuen Beitr&auml;ge siet ihremletztem Besuch"
+msgstr "Keine neuen Beitr&auml;ge seit Ihrem letztem Besuch"
 
 #: templates/dinette/replydetail_frag.html:12
 #: templates/dinette/topic_detail.html:102
@@ -424,7 +422,7 @@ msgstr "Antwort erstellen"
 #: templates/dinette/topic_detail.html:55
 #: templates/dinette/topic_detail.html:173
 msgid "Login to Post Reply"
-msgstr "Anmelden,um Antwort zu erstellen"
+msgstr "Anmelden um Antwort zu erstellen"
 
 #: templates/dinette/topic_detail.html:60
 msgid "Next"
@@ -442,12 +440,12 @@ msgstr "RSS Themen"
 #: templates/dinette/user_profile.html:73
 #: templates/dinette/user_profile.html:81
 msgid "Unsubscribe"
-msgstr "Unsubscribe"
+msgstr "Abbestellen"
 
 #: templates/dinette/topic_detail.html:81
 #: templates/dinette/user_profile.html:75
 msgid "Subscribe"
-msgstr "Subscribe"
+msgstr "Abonnieren"
 
 #: templates/dinette/topic_detail_frag.html:18
 msgid "Closed"
@@ -476,7 +474,7 @@ msgstr "Moderator von"
 
 #: templates/dinette/user_profile.html:62
 msgid "Number of topics posted"
-msgstr "Anzahler stellter Themen"
+msgstr "Anzahl erstellter Themen"
 
 #: templates/dinette/user_profile.html:63
 msgid "Number of replies posted"

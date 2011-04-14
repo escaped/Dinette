@@ -41,7 +41,7 @@ msgstr "Thema erfolgreich erstellt"
 #: media/dinette/scripts/dinetteajax.js:73
 #: media/dinette/scripts/dinetteajax.js:96
 msgid "There is an error in the form.Please repost the form"
-msgstr "Es ist ein Fehleraufgetreten. Versuchen sie es bitte nocheinmal."
+msgstr "Es ist ein Fehler aufgetreten. Versuchen Sie es bitte noch einmal."
 
 #: media/dinette/scripts/dinetteajax.js:88
 msgid "Sucessfully Replied to the topic"
