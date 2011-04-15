@@ -1,6 +1,8 @@
 # Dinette Settings
 import os
 
+HIDE_MARKUP = False
+
 TOPIC_PAGE_SIZE = 3
 
 REPLY_PAGE_SIZE = 3
