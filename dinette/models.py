@@ -79,7 +79,7 @@ class Category(models.Model):
         return ('dinette_index',(),{'categoryslug':self.slug})
     
     def getCategoryString(self):
-        return _("category/%(slug)s") % {'slug': self.slug}
+        return "category/%(slug)s" % {'slug': self.slug}
     
     
     def noofPosts(self):
@@ -205,7 +205,7 @@ class Ftopics(models.Model):
         
     def getTopicString(self):
         #which is helpful for doing reverse lookup of an feed url for a topic         
-        return _("topic/%(slug)s") % {'slug': self.slug}
+        return "topic/%(slug)s" % {'slug': self.slug}
         
     def lastPostDatetime(self):
         return self.lastPost().created_on
