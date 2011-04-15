@@ -72,7 +72,8 @@
 	<div class="post-entry">
         <h4 id="entry{{ reply.id }}" class="entry-title hn">{% trans "Re" %}: {{reply.topic.subject}}</h4>
 		<div id=content{{ reply.id }} class="entry-content">
-		  <p>{{ reply.message }}</p>
+		  {% load dinette_tags %}
+		  {{ reply.message|html_urlize }}
 		  {% with reply as rtopic %}    
 		    {% include 'dinette/attachement_frag.html' %}     
 		  {% endwith %}
