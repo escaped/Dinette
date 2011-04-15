@@ -89,7 +89,7 @@
                 <p class="post-actions">
                     {% if reply.posted_by == request.user or request.user in reply.topic.category.moderated_by.all %}
 						<span class="delete-post">
-						    <a href="#" onclick="delete_reply({{ reply.id }}); return false;">{% trans "Delete" }</a>
+						    <a href="#" onclick="delete_reply({{ reply.id }}); return false;">{% trans "Delete" %}</a>
 						</span>
 						<span class="edit-post">
 						    <a href="{% url dinette_editreply reply.id %}">{% trans "Edit" %}</a>
