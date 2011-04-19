@@ -144,7 +144,7 @@ class Ftopics(models.Model):
                           markup_choices=settings.MARKUP_RENDERERS,
                           escape_html=True,
                           )
-    file = models.FileField(upload_to='dinette/files',default='',null=True,blank=True)
+    file = models.FileField(_('File'), upload_to='dinette/files',default='',null=True,blank=True)
     attachment_type = models.CharField(max_length=20,default='nofile')
     filename = models.CharField(max_length=100,default="dummyname.txt")
     viewcount = models.IntegerField(default=0)
@@ -364,6 +364,11 @@ class DinetteUserProfile(models.Model):
                 #fallback to user id
                 slug = self.user.id
         super(DinetteUserProfile, self).save(*args, **kwargs)
+
+    class Meta:
+        verbose_name = _('Dinette User Profile')
+        verbose_name_plural = _('Dinette User Profiles')
+
     
 class NavLink(models.Model):
     title = models.CharField(max_length = 100)

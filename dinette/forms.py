@@ -1,5 +1,6 @@
 from django.forms import ModelForm
 from django import forms
+from django.utils.translation import ugettext_lazy as _
 
 from dinette.models import Ftopics ,Reply
 
@@ -7,8 +8,8 @@ import settings
 
 #create a form from this Ftopics and use this when posting the a Topic
 class FtopicForm(ModelForm):
-    subject = forms.CharField(widget = forms.TextInput(attrs={"size":90}))
-    message = forms.CharField(widget = forms.Textarea(attrs={"cols":90, "rows":10}))
+    subject = forms.CharField(label=_('Subject'), widget=forms.TextInput(attrs={"size":90}))
+    message = forms.CharField(label=_('Message'), widget=forms.Textarea(attrs={"cols":90, "rows":10}))
     class Meta:
         model = Ftopics
         try: #TODO better way
@@ -22,7 +23,7 @@ class FtopicForm(ModelForm):
 
 #create a form from Reply
 class ReplyForm(ModelForm):
-    message = forms.CharField(widget = forms.Textarea(attrs={"cols":90, "rows":10}))
+    message = forms.CharField(label=_('Message'), widget=forms.Textarea(attrs={"cols":90, "rows":10}))
     class Meta:
         model = Reply
         try:

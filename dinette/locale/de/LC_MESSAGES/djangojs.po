@@ -3,19 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-07 14:12+0200\n"
+"POT-Creation-Date: 2011-04-19 16:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: media/dinette/scripts/dinetteajax.js:31
@@ -26,13 +25,17 @@ msgstr "Thema darf nicht leer sein"
 msgid "Message field should not be empty"
 msgstr "Nachricht darf nicht leer sein"
 
+#: media/dinette/scripts/dinetteajax.js:41
+msgid "posting..."
+msgstr "sende..."
+
 #: media/dinette/scripts/dinetteajax.js:50
 msgid "Message should not be empty"
 msgstr "Nachricht darf nicht leer sein"
 
 #: media/dinette/scripts/dinetteajax.js:54
-msgid "posting the reply..........."
-msgstr "speichere Antwort"
+msgid "posting the reply..."
+msgstr "speichere Antwort..."
 
 #: media/dinette/scripts/dinetteajax.js:65
 msgid "Sucessfully posted the topic"
