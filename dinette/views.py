@@ -334,7 +334,7 @@ class LatestRepliesOfTopic(Feed):
     
     
 def assignUserElements(user):
-    ranks = getattr(settings, 'RANKS_NAMES_DATA')
+    ranks = getattr(settings, 'RANKS_NAMES_DATA', None)
     rank = ''
     if ranks:
         totalposts = user.ftopics_set.count() + user.reply_set.count()
