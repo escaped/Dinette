@@ -6,7 +6,7 @@ from django import forms
 from django.template.defaultfilters import slugify
 from django.db.models.signals import post_save
 from django.template.defaultfilters import truncatewords
-from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext_lazy as _
 
 import logging
 import logging.config
