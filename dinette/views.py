@@ -2,6 +2,7 @@ from django.http import HttpResponse, Http404, HttpResponseForbidden, HttpRespon
 from django.shortcuts import render_to_response, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
+from django.core.urlresolvers import reverse
 from django.template import Context , loader
 from django.template import RequestContext
 from django.core.paginator import Paginator
@@ -288,7 +289,7 @@ class LatestTopicsByCategory(Feed):
         return _("Latest topics in category %(name)s") % {'name': obj.name}
     
     def link(self, obj):
-        return  settings.SITE_URL
+        return reverse('dinette_category')
     
     def items(self, obj):
         return obj.ftopics_set.all()[:10]
@@ -314,7 +315,7 @@ class LatestRepliesOfTopic(Feed):
         return _("Latest replies in topic %(subject)s") % {'subject': obj.subject}
      
     def link(self, obj):
-        return  settings.SITE_URL
+        return reverse('dinette_category')
 
     def items(self, obj):
         list = []
