@@ -179,11 +179,8 @@ def postTopic(request) :
     mlogger.debug("what is the response = %s " % response_html)
   
     d2 = {"is_valid":"true","response_html":response_html}
-    #this the required for ajax file uploads
-    if request.FILES : 
-        json = "<textarea>"+simplejson.dumps(d2)+"</textarea>"
-    else :
-        json = simplejson.dumps(d2) 
+    json = simplejson.dumps(d2) 
+    
     return HttpResponse(json, mimetype = json_mimetype)
     
 @login_required    
@@ -236,13 +233,8 @@ def postReply(request) :
     mlogger.debug("what is the response = %s " % response_html)
     
     d2 = {"is_valid":"true","response_html":response_html}
-        
-    if request.FILES :
-        #this the required for ajax file uploads
-        json = "<textarea>"+simplejson.dumps(d2)+"</textarea>"
-    else:
-        json = simplejson.dumps(d2)
-    
+    json = simplejson.dumps(d2)
+
     return HttpResponse(json, mimetype = json_mimetype)  
 
 @login_required    
