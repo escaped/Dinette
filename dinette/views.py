@@ -135,10 +135,6 @@ def postTopic(request) :
     if topic.is_valid() == False :
         d = {"is_valid":"false","response_html":topic.as_table()}
         json = simplejson.dumps(d)
-        if request.FILES :
-            json = "<textarea>"+simplejson.dumps(d)+"</textarea>"
-        else:
-            json = simplejson.dumps(d)
         return HttpResponse(json, mimetype = json_mimetype)                    
      
      
@@ -146,10 +142,7 @@ def postTopic(request) :
     if (datetime.now() -(request.user.get_profile().last_posttime)).seconds <= settings.FLOOD_TIME :
     #oh....... user trying to flood us Stop him
         d2 = {"is_valid":"flood","errormessage":_("Flood control..................")}
-        if request.FILES : 
-            json = "<textarea>"+simplejson.dumps(d2)+"</textarea>"
-        else :
-            json = simplejson.dumps(d2)  
+        json = simplejson.dumps(d2)  
         return HttpResponse(json, mimetype = json_mimetype)
          
     ftopic = topic.save(commit=False)     
@@ -191,22 +184,13 @@ def postReply(request) :
     if freply.is_valid() == False :
         d = {"is_valid":"false","response_html":freply.as_table()}
         json = simplejson.dumps(d)
-        if request.FILES :
-            json = "<textarea>"+simplejson.dumps(d)+"</textarea>"
-        else:
-            json = simplejson.dumps(d)
         return HttpResponse(json, mimetype = json_mimetype)
-        
-        
         
     #code which checks for flood control
     if (datetime.now() -(request.user.get_profile().last_posttime)).seconds <= settings.FLOOD_TIME:
     #oh....... user trying to flood us Stop him
         d2 = {"is_valid":"flood","errormessage": _("You have posted message too recently. Please wait a while before trying again.")}
-        if request.FILES : 
-            json = "<textarea>"+simplejson.dumps(d2)+"</textarea>"
-        else :
-            json = simplejson.dumps(d2)  
+        json = simplejson.dumps(d2)  
         return HttpResponse(json, mimetype = json_mimetype)        
         
     
