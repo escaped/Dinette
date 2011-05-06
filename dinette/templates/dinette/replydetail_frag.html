@@ -74,6 +74,8 @@
 		<div id=content{{ reply.id }} class="entry-content">
 		  {% load dinette_tags %}
 		  {{ reply.message|html_urlize }}
+		</div>
+		<div class="entry-content">
 		  {% with reply as rtopic %}    
 		    {% include 'dinette/attachement_frag.html' %}     
 		  {% endwith %}
