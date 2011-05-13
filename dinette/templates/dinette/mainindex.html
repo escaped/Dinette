@@ -71,7 +71,7 @@
 		      {% else %}
 		          <a href={{ category.lastPost.get_absolute_url }}>
 		      {% endif %}
-		          {{ category.lastPostDatetime|date:"jS F Y H:i A" }}
+		          {{ category.lastPostDatetime }}
 		      </a>
 		  </strong> 
 		  <cite>
