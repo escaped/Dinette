@@ -45,7 +45,7 @@
 	<li class="info-lastpost">
 	  <span class="label">Last post</span>
 	  {% if topic.reply_set.count > 0 %}
-	      <strong><a href="{{ topic.lastPost.get_url_with_fragment }}">{{ topic.lastPostDatetime" }}</a></strong>
+	      <strong><a href="{{ topic.lastPost.get_url_with_fragment }}">{{ topic.lastPostDatetime }}</a></strong>
 	  {% else %}
 	      <strong><a href="{{ topic.lastPost.get_absolute_url }}">{{ topic.lastPostDatetime }}</a></strong>
 	  {% endif %}
