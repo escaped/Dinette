@@ -88,7 +88,7 @@ function formsubmission(data) {
             show_hide_error_box();
             $("#errorbox span").html(gettext("Sucessfully Replied to the topic"));
             $("#errorbox span").css({ padding : 6 })
-            $("#formbox").css("display","none");
+        	$('#fpostreply').clearForm();
         }
         else if(data["is_valid"] == "false") {
             $("tr:lt(2)","#formbox").remove();
@@ -186,8 +186,8 @@ $('.moderate-post').click(function(){
 });
 
 function quote_reply(reply,author){
-	msg = "> "+author+":\n";
-	msg += '> '+$("#content"+reply).text().trim().replace('\n','\n> ');
+	msg = "-- "+author+":\n";
+	msg += '-- '+$("#content"+reply).text().trim().replace('\n','\n-- ');
 	msg += '\n\n';
 	$("#id_message").val(msg).focus();
 }

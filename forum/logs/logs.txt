@@ -1,0 +1,125 @@
+2011-04-07 07:39:45,956 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-07 07:39:45,957 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-07 07:40:27,337 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-07 07:40:27,338 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-07 07:40:43,421 - dinette.views - INFO - In the index page
+2011-04-07 07:40:43,538 - dinette.views - DEBUG - what is the accesslist 
+2011-04-07 07:41:31,495 - dinette.views - INFO - In the index page
+2011-04-07 07:41:31,519 - dinette.views - DEBUG - what is the accesslist 
+2011-04-07 07:42:13,611 - dinette.views - INFO - In the index page
+2011-04-07 07:42:13,640 - dinette.views - DEBUG - what is the accesslist 
+2011-04-07 07:42:47,904 - dinette.views - INFO - In the index page
+2011-04-07 07:42:47,952 - dinette.views - DEBUG - what is the accesslist 
+2011-04-07 07:44:45,034 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-07 07:44:45,036 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-07 07:45:03,986 - dinette.views - INFO - In the index page
+2011-04-07 07:45:04,342 - dinette.views - DEBUG - what is the accesslist 
+2011-04-07 07:49:46,000 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-07 07:49:46,003 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-07 07:49:57,412 - dinette.views - INFO - In the index page
+2011-04-07 07:49:57,795 - dinette.views - DEBUG - what is the accesslist 
+2011-04-08 08:42:01,152 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:42:01,154 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:42:13,081 - dinette.views - INFO - In the index page
+2011-04-08 08:42:13,190 - dinette.views - DEBUG - what is the accesslist 
+2011-04-08 08:43:06,290 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:43:06,291 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:43:17,676 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:43:17,678 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:43:59,225 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:43:59,227 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:44:08,493 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:44:08,496 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:44:50,613 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:44:50,616 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:45:10,981 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:45:10,982 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:45:32,045 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:45:32,047 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:45:54,082 - dinette.views - INFO - In the index page
+2011-04-08 08:45:54,163 - dinette.views - DEBUG - what is the accesslist 
+2011-04-08 08:47:28,405 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:47:28,407 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:51:14,200 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:51:14,202 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:51:24,885 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:51:24,887 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:54:11,334 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:54:11,342 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:54:20,066 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:54:20,069 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:55:43,199 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:55:43,202 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:56:39,359 - dinette.views - INFO - In the index page
+2011-04-08 08:56:39,420 - dinette.views - DEBUG - appending false..........1
+2011-04-08 08:56:39,427 - dinette.views - DEBUG - what is the accesslist 0
+2011-04-08 08:56:58,636 - dinette.views - INFO - In the index page
+2011-04-08 08:56:58,715 - dinette.views - DEBUG - appending true ...... 1
+2011-04-08 08:56:58,717 - dinette.views - DEBUG - breaking upTrue
+2011-04-08 08:56:58,720 - dinette.views - DEBUG - what is the accesslist 1
+2011-04-08 08:57:37,372 - dinette.views - INFO - In the index page
+2011-04-08 08:57:37,445 - dinette.views - DEBUG - appending true ...... 1
+2011-04-08 08:57:37,447 - dinette.views - DEBUG - breaking upTrue
+2011-04-08 08:57:37,448 - dinette.views - DEBUG - what is the accesslist 1
+2011-04-08 08:57:37,757 - dinette.models - DEBUG - Total count =0 
+2011-04-08 08:57:39,907 - dinette.views - INFO - In the welcome page.......................
+2011-04-08 08:57:39,908 - dinette.views - DEBUG - Type of request.user <class 'django.core.handlers.wsgi.WSGIRequest'>
+2011-04-08 08:59:22,467 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 08:59:22,469 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 08:59:25,356 - dinette.views - INFO - In the welcome page.......................
+2011-04-08 08:59:25,357 - dinette.views - DEBUG - Type of request.user <class 'django.core.handlers.wsgi.WSGIRequest'>
+2011-04-08 09:00:43,071 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 09:00:43,074 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 09:00:47,186 - dinette.views - INFO - In the welcome page.......................
+2011-04-08 09:00:47,188 - dinette.views - DEBUG - Type of request.user <class 'django.core.handlers.wsgi.WSGIRequest'>
+2011-04-08 09:03:16,592 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 09:03:16,594 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 09:03:19,694 - dinette.views - INFO - In the welcome page.......................
+2011-04-08 09:03:19,695 - dinette.views - DEBUG - Type of request.user <class 'django.core.handlers.wsgi.WSGIRequest'>
+2011-04-08 09:04:01,953 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 09:04:01,955 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 09:04:08,884 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 09:04:08,886 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 09:04:18,385 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 09:04:18,387 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 09:04:25,674 - dinette.views - INFO - In the welcome page.......................
+2011-04-08 09:04:25,676 - dinette.views - DEBUG - Type of request.user <class 'django.core.handlers.wsgi.WSGIRequest'>
+2011-04-08 09:22:29,680 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 09:22:29,682 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 09:22:33,627 - dinette.views - INFO - In the index page
+2011-04-08 09:22:33,696 - dinette.views - DEBUG - appending true ...... 1
+2011-04-08 09:22:33,697 - dinette.views - DEBUG - breaking upTrue
+2011-04-08 09:22:33,699 - dinette.views - DEBUG - what is the accesslist 1
+2011-04-08 09:22:35,132 - dinette.models - DEBUG - Total count =0 
+2011-04-08 09:22:40,923 - dinette.views - INFO - In the welcome page.......................
+2011-04-08 09:22:40,925 - dinette.views - DEBUG - Type of request.user <class 'django.core.handlers.wsgi.WSGIRequest'>
+2011-04-08 09:23:16,038 - dinette.views - INFO - In the welcome page.......................
+2011-04-08 09:23:16,039 - dinette.views - DEBUG - Type of request.user <class 'django.core.handlers.wsgi.WSGIRequest'>
+2011-04-08 09:50:17,502 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 09:50:17,504 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 09:50:24,472 - dinette.views - INFO - In the index page
+2011-04-08 09:50:24,522 - dinette.views - DEBUG - appending false..........1
+2011-04-08 09:50:24,523 - dinette.views - DEBUG - what is the accesslist 0
+2011-04-08 09:50:46,275 - dinette.views - INFO - In the index page
+2011-04-08 09:50:46,323 - dinette.views - DEBUG - appending false..........1
+2011-04-08 09:50:46,324 - dinette.views - DEBUG - what is the accesslist 0
+2011-04-08 09:51:05,447 - dinette.views - INFO - In the index page
+2011-04-08 09:51:05,508 - dinette.views - DEBUG - appending true ...... 1
+2011-04-08 09:51:05,509 - dinette.views - DEBUG - breaking upTrue
+2011-04-08 09:51:05,511 - dinette.views - DEBUG - what is the accesslist 1
+2011-04-08 09:51:05,724 - dinette.models - DEBUG - Total count =1 
+2011-04-08 09:51:08,851 - dinette.views - INFO - In the welcome page.......................
+2011-04-08 09:51:08,852 - dinette.views - DEBUG - Type of request.user <class 'django.core.handlers.wsgi.WSGIRequest'>
+2011-04-08 09:52:28,729 - dinette.views - INFO - In the welcome page.......................
+2011-04-08 09:52:28,731 - dinette.views - DEBUG - Type of request.user <class 'django.core.handlers.wsgi.WSGIRequest'>
+2011-04-08 09:57:18,706 - dinette.models - DEBUG - From settings LOG_FILE_NAME /home/alex/coding/python/dinette/forum/logging.conf LOG_FILE_PATH "/home/alex/coding/python/dinette/forum/logs/logs.txt"
+2011-04-08 09:57:18,708 - dinette.models - DEBUG - Models Compliing!dinette.models
+2011-04-08 09:58:11,648 - dinette.views - INFO - In the index page
+2011-04-08 09:58:11,690 - dinette.views - DEBUG - appending true ...... 1
+2011-04-08 09:58:11,691 - dinette.views - DEBUG - breaking upTrue
+2011-04-08 09:58:11,692 - dinette.views - DEBUG - what is the accesslist 1
+2011-04-08 09:58:11,937 - dinette.models - DEBUG - Total count =1 
+2011-04-08 09:58:14,252 - dinette.views - INFO - In the welcome page.......................
+2011-04-08 09:58:14,254 - dinette.views - DEBUG - Type of request.user <class 'django.core.handlers.wsgi.WSGIRequest'>
+2011-04-08 09:58:29,941 - dinette.views - INFO - In the welcome page.......................
+2011-04-08 09:58:29,942 - dinette.views - DEBUG - Type of request.user <class 'django.core.handlers.wsgi.WSGIRequest'>

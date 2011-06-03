@@ -148,7 +148,7 @@
 			<h4 id="pc{{ reply.pk }}" class="entry-title hn">Re: {{reply.topic.subject}}</h4>
 			<div class="entry-content">
 			  {% load dinette_tags %}
-			  {{ topic.message|html_urlize }}
+			  {{ topic.message|linebreaksbr|html_urlize }}
 			  {% with topic as rtopic %}    
 				{% include 'dinette/attachement_frag.html' %}     
 			  {% endwith %}     

@@ -73,7 +73,7 @@
         <h4 id="entry{{ reply.id }}" class="entry-title hn">{% trans "Re" %}: {{reply.topic.subject}}</h4>
 		<div id=content{{ reply.id }} class="entry-content">
 		  {% load dinette_tags %}
-		  {{ reply.message|html_urlize }}
+		  {{ reply.message|linebreaksbr|html_urlize }}
 		</div>
 		<div class="entry-content">
 		  {% with reply as rtopic %}    
