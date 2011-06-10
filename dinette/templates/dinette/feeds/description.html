@@ -1,1 +1,2 @@
-{{ obj.htmlfrombbcode|safe }}
+{% load dinette_tags %}
+{{ obj.message|linebreaksbr|html_urlize|safe }}

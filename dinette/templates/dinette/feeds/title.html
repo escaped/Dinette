@@ -1,8 +1,8 @@
 {% ifequal obj.classname "Ftopics" %}
-   {{obj.subject}}
+   {{obj.subject|striptags}}
 {% endifequal %}
 
 
 {% ifequal obj.classname "Reply" %}
-   {{obj.message|slice:":10"}}....
+   {{obj.message|striptags|slice:":10"}}....
 {% endifequal %}  
