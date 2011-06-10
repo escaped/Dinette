@@ -186,10 +186,16 @@ $('.moderate-post').click(function(){
 });
 
 function quote_reply(reply,author){
-	msg = "-- "+author+":\n";
-	msg += '-- '+$("#content"+reply).text().trim().replace('\n','\n-- ');
-	msg += '\n\n';
-	$("#id_message").val(msg).focus();
+	// html cleanup
+	var msg = $("#content"+reply).html().replace(/<br.?\/?>/g,'\n').trim().replace(/\n\s*\n/g,'\n'); 
+	msg = $('<div />').html(msg).text();
+
+	// create quote
+	var quote = "> " + author+":\n";
+	quote += '> ' + msg.replace(/\n/g,'\n> ');
+	quote += '\n\n';
+	quote = quote.replace(/> >/g, '>>');
+	$("#id_message").val(quote).focus();
 }
 
 function delete_reply(reply){
